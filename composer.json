@@ -1,0 +1,20 @@
+{
+    "name": "timothem-geoffreyg/suptraincommander",
+    "description": "Site du projet de fin d'année BsC - Geoffrey Gravalon et Timothé Mauzet",
+    "require": {
+        "components/jquery": "^2.2",
+        "zurb/foundation": "^6.2"
+    },
+    "license": "The MIT License (MIT) - Copyright (c) 2016",
+    "authors": [
+        {
+            "name": "Timothé Mauzet",
+            "email": "timothe.mauzet@supinfo.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "SupTrainCommander\\" : "class/"
+        }
+    }
+}

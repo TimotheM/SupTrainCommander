@@ -3,6 +3,9 @@ body { background-color: whitesmoke; color: black; }
 
 header { display: block; width: 100%; height: auto; background-color: #757575; }
 
+section#submenu { display: block; width: 100%; height: auto; background: url(../img/background_sub_menu.jpg) no-repeat center center; text-align: center; }
+section#submenu img { width: 700px; height: 250px; margin: auto; }
+
 /* MODIF FOUNDATION */
 .top-bar, .top-bar ul { background-color: #757575; }
 

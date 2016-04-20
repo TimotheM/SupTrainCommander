@@ -1,0 +1,11 @@
+/* *********************** VAR CSS ********************** */
+body { background-color: whitesmoke; color: black; }
+
+header { display: block; width: 100%; height: auto; background-color: #757575; }
+
+/* MODIF FOUNDATION */
+.top-bar, .top-bar ul { background-color: #757575; }
+
+.top-bar .top-bar-left a { color: white; /*font-family: 'Lato', sans-serif;*/ }
+.top-bar .top-bar-left a:hover, .top-bar .top-bar-left a:focus { text-decoration: underline; border: 1px solid #757575; }
+.top-bar .top-bar-left a:visited, .top-bar .top-bar-left a:link { color: white; border: 1px solid #757575; }

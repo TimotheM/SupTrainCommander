@@ -8,6 +8,7 @@
         	<meta name="language" content="fr"/>
         	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         	<title>Accueil :: SupTrainCommander</title>
+			<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         	<link rel="stylesheet" type="text/css" href="vendor/zurb/foundation/dist/foundation.min.css">
         	<link rel="stylesheet" type="text/css" href="css/app.css"/>
         	<script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
@@ -17,9 +18,15 @@
         	<![endif]-->
     	</head>
         	<body>
-            		<header>
+					<?php require_once('require/header.block.php'); ?>
 
-            		</header>
+					<footer>
+						<div class="row">
+							<div class="small-12 medium-12 large-12 columns">
+
+							</div>
+						</div>
+					</footer>
 
             		<script src="vendor/zurb/foundation/dist/foundation.min.js"></script>
             		<script>$(document).foundation();</script>

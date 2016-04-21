@@ -20,13 +20,15 @@
         	<body>
 					<?php require_once('require/header.block.php'); ?>
 
-					<footer>
-						<div class="row">
+					<section>
+						<div class="row" id="corps">
 							<div class="small-12 medium-12 large-12 columns">
-
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quam.</p>
 							</div>
 						</div>
-					</footer>
+					</section>
+
+					<?php require_once('require/footer.block.php'); ?>
 
             		<script src="vendor/zurb/foundation/dist/foundation.min.js"></script>
             		<script>$(document).foundation();</script>

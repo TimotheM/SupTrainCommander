@@ -8,7 +8,7 @@
         	<meta name="language" content="fr"/>
         	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         	<title>Accueil :: SupTrainCommander</title>
-			<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Lato|Indie+Flower' rel='stylesheet' type='text/css'>
         	<link rel="stylesheet" type="text/css" href="vendor/zurb/foundation/dist/foundation.min.css">
         	<link rel="stylesheet" type="text/css" href="css/app.css"/>
         	<script type="text/javascript" src="vendor/components/jquery/jquery.min.js"></script>
@@ -22,8 +22,19 @@
 
 					<section>
 						<div class="row" id="corps">
-							<div class="small-12 medium-12 large-12 columns">
+							<div class="small-12 medium-9 large-9 columns">
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, quam.</p>
+							</div>
+							<div class="small-12 medium-3 large-3 columns">
+								<h3>Espace Membre</h3>
+								<?php
+									echo SupTrainCommander\Form::init("post", "", "");
+									echo SupTrainCommander\Form::inputEmail("Votre email...", "inputEmail", "Votre email...", "", "required", "");
+									echo SupTrainCommander\Form::inputPassword("Votre password...", "inputPassword", "Votre mot de passe...", "", "required", "");
+									echo SupTrainCommander\Form::submit("inputSubmit", "login");
+									echo SupTrainCommander\Form::reset("inputReset", "Cancel");
+									echo SupTrainCommander\Form::close();
+								?>
 							</div>
 						</div>
 					</section>

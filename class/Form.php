@@ -58,6 +58,7 @@
         public static function inputEmail($label, $nameId, $placeholder, $value, $required, $class) {
 
             $inputEmail = '<label for="'.$nameId.'">'.$label;
+            $inputEmail .= '</label>';
             $inputEmail .= '<input ';
             if ($class != "") { $inputEmail .= 'class="'.$class.'" '; }
             $inputEmail .= 'type="email" name="'.$nameId.'" id="'.$nameId.'" ';
@@ -65,7 +66,6 @@
             if ($value != "") { $inputEmail .= 'value="'.$value.'" '; }
             if ($required != "") { $inputEmail .= 'required'; }
             $inputEmail .= '>';
-            $inputEmail .= '</label>';
 
             return $inputEmail;
         }
@@ -82,7 +82,7 @@
          */
         public static function inputPassword($label, $nameId, $placeholder, $value, $required, $class) {
 
-            $inputPassword = '<label for="'.$nameId.'">'.$label;
+            $inputPassword = '<label for="'.$nameId.'">'.$label.'</label>';
             $inputPassword .= '<input ';
             if ($class != "") { $inputPassword .= 'class="'.$class.'" '; }
             $inputPassword .= 'type="password" name="'.$nameId.'" id="'.$nameId.'" ';
@@ -90,7 +90,6 @@
             if ($value != "") { $inputPassword .= 'value="'.$value.'"'; }
             if ($required != "") { $inputPassword .= 'required'; }
             $inputPassword .= '>';
-            $inputPassword .= '</label>';
 
             return $inputPassword;
         }
@@ -107,7 +106,7 @@
          */
         public static function inputUrl($label, $nameId, $placeholder, $value, $required, $class) {
 
-            $inputUrl = '<label for="'.$nameId.'">'.$label;
+            $inputUrl = '<label for="'.$nameId.'">'.$label.'</label>';
             $inputUrl .= '<input ';
             if ($class != "") { $inputUrl .= 'class="'.$class.'" '; }
             $inputUrl .= 'type="url" name="'.$nameId.'" id="'.$nameId.'" ';
@@ -115,7 +114,6 @@
             if ($value != "") { $inputUrl .= 'value="'.$value.'" '; }
             if ($required != "") { $inputUrl .= 'required'; }
             $inputUrl .= '>';
-            $inputUrl .= '</label>';
 
             return $inputUrl;
 
@@ -130,14 +128,12 @@
          */
         public static function inputImg($label, $nameId, $required) {
             if ($required == "") {
-                $inputText = '<label for="'.$nameId.'">'.$label;
+                $inputText = '<label for="'.$nameId.'">'.$label.'</label>';
                 $inputText .= '<input type="file" name="'.$nameId.'" id="'.$nameId.'">';
-                $inputText .= '</label>';
                 return $inputText;
             } else {
-                $inputText = '<label for="'.$nameId.'">'.$label;
+                $inputText = '<label for="'.$nameId.'">'.$label.'</label>';
                 $inputText .= '<input type="file" name="'.$nameId.'" id="'.$nameId.'" required />';
-                $inputText .= '</label>';
                 return $inputText;
             }
         }
@@ -164,7 +160,7 @@
          */
         public static function textarea($label, $nameId, $placeholder, $value, $required, $class) {
 
-            $textarea = '<label for="'.$nameId.'">'.$label;
+            $textarea = '<label for="'.$nameId.'">'.$label.'</label>';
             $textarea .= '<textarea ';
             if ($class != "") { $textarea .= 'class="'.$class.'" '; }
             $textarea .= 'name="'.$nameId.'" id="'.$nameId.'" ';
@@ -173,7 +169,6 @@
             $textarea .= '>';
             if ($value != "") { $textarea .= $value; }
             $textarea .= '</textarea>';
-            $textarea .= '</label>';
 
             return $textarea;
 
@@ -187,7 +182,7 @@
          * @return string
          */
         public static function select($label, $nameId, $options) {
-            $select = '<label for="'.$nameId.'">'.$label;
+            $select = '<label for="'.$nameId.'">'.$label.'</label>';
             $select .= '<select name="'.$nameId.'" id="'.$nameId.'">';
 
             $countOptions = count($options);
@@ -196,7 +191,6 @@
             }
 
             $select .= '</select>';
-            $select .= '</label>';
             return $select;
         }
 

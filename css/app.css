@@ -10,7 +10,7 @@ section#submenu { display: block; width: 100%; height: 300px; background: url(..
 section#submenu img { width: 700px; height: 250px; margin: auto auto; }
 
 footer { padding: 15px 0; background-color: #757575; }
-footer p { margin-bottom: 0; }
+footer p { margin-bottom: 0; text-align: center; color: white; font-style: italic; }
 
 /* MODIF FOUNDATION */
 .top-bar, .top-bar ul { background-color: #757575; }
